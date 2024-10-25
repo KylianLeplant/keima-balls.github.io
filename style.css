@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}   
+
+.circle {
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.innerCircle {
+    z-index: 4;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;  
+    position: absolute;         
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.arena {
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.arenaBorder {
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;  
+    position: absolute;         
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
