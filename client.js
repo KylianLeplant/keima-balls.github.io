@@ -285,9 +285,9 @@ const color_arena = new Color("#2c2e33","#ffffff","#ffffff");
 let coeff_size = 1;
 let arena = false;
 console.log(container.clientWidth)
-is_interval = false; // vaut true si l'intervale créé par startMovement est en cours
-socket_open = false;
-socket = NaN;
+let is_interval = false; // vaut true si l'intervale créé par startMovement est en cours
+let socket_open = false;
+let socket = NaN;
 createSocket();
 let tab_player = [];
 let self = NaN;
