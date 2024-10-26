@@ -1,7 +1,7 @@
 console.log("burfbiejnief");
-import {return_color,vect_unitaire,distance,generateToken,getToken,send} from "./modules/fonctions.js";
+import {vect_unitaire,distance,generateToken,getToken,send} from "./modules/fonctions.js";
 import {Player} from "./modules/Player.js";
-import {Color,blue,red,color_arena} from "./modules/Color.js";
+import {Color} from "./modules/Color.js";
 import {Arena} from "./modules/Arena.js";
 //fç_hji
 
@@ -279,6 +279,9 @@ function createSocket() {
 //PROGRAMME PRINCIPAL
 ////////////////////////////////////////////////////////////////////////
 movement = false;
+const blue = new Color("#378eff","#7ed0ff","#a00b0b");
+const red = new Color("#ea1818","#fc6551","#b40b00");
+const color_arena = new Color("#2c2e33","#ffffff","#ffffff");
 let coeff_size = 1;
 let arena = false;
 console.log(container.clientWidth)

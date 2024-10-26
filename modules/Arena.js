@@ -1,6 +1,6 @@
 //import {Color,blue,red,arena_color} from "Color.js";
 
-class Arena{
+export class Arena{
     constructor(color,radius,x,y,scale_factor){
         this.color = color;
         this.radius = radius;

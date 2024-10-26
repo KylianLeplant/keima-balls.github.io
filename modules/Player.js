@@ -1,6 +1,6 @@
 
 
-class Player{
+export class Player{
     constructor(x=100,y=100,is_player=true,player_token,color,size,nb_life){
         // attributs de position, de vitesse et de taille 
         this.x = x;
