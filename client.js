@@ -278,7 +278,7 @@ function createSocket() {
 ////////////////////////////////////////////////////////////////////////
 //PROGRAMME PRINCIPAL
 ////////////////////////////////////////////////////////////////////////
-movement = false;
+let movement = false;
 const blue = new Color("#378eff","#7ed0ff","#a00b0b");
 const red = new Color("#ea1818","#fc6551","#b40b00");
 const color_arena = new Color("#2c2e33","#ffffff","#ffffff");
