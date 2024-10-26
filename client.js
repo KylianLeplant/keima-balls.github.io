@@ -195,7 +195,7 @@ function createSocket() {
             //console.log("UPDATE :",arena)
             
             
-            for (player of tab_player){
+            for (let player of tab_player){
                 if (player.token == data.player_token){
                     player.nb_life = data.nb_life;
                     if (player.nb_life>0){
