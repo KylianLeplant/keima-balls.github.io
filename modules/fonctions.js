@@ -1,4 +1,4 @@
-
+const tokenKey = "TokenCircleGame";
 export function vect_unitaire(x,y){
     let r=Math.sqrt(x**2+y**2);S
     //console.log("x,y,r",x,y,r)

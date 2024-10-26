@@ -9,7 +9,7 @@ import {Arena} from "./modules/Arena.js";
 //CONSTANTES
 ////////////////////////////////////////////////////////////////////////
 
-const tokenKey = "TokenCircleGame";
+
 const token = getToken();
 const container = document.getElementById('container');
 document.body.style.background = "#222222";
