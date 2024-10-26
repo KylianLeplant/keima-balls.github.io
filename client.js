@@ -164,12 +164,12 @@ function createSocket() {
                 console.log("tab_token :",tab_token);
                 if (token == data.newplayer_token){
                     console.log("me",data.color);
-                    self = new Player(data.x,data.y,true,token,return_color(data.color),100,data.nb_life,()=>coeff_size,send);
+                    self = new Player(data.x,data.y,true,token,return_color(data.color),100,data.nb_life,()=>coeff_size,send,()=>token);
                     tab_player.push(self);
                 }
                 else {
                     console.log("not me",data.color)
-                    let circle = new Player(data.x,data.y,false,data.newplayer_token,return_color(data.color),100,data.nb_life,()=>coeff_size,send);
+                    let circle = new Player(data.x,data.y,false,data.newplayer_token,return_color(data.color),100,data.nb_life,()=>coeff_size,send,()=>token);
                     tab_player.push(circle);
                 }
             }

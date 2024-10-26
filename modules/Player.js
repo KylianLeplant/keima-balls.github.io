@@ -1,7 +1,7 @@
 
 
 export class Player{
-    constructor(x=100,y=100,is_player=true,player_token,color,size,nb_life,coeff_size,send){
+    constructor(x=100,y=100,is_player=true,player_token,color,size,nb_life,coeff_size,send,token_client){
         // attributs de position, de vitesse et de taille 
         this.x = x;
         this.y = y;
@@ -14,6 +14,7 @@ export class Player{
         
         this.send = send;
         this.coeff_size = coeff_size;
+        this.token_client = token_client;
 
         this.token = player_token;
         this.delta_v = 100;   //mana disponible
@@ -84,7 +85,7 @@ export class Player{
                     let dv = this.dash(e.clientX - (this.x-this.radius)*this.coeff_size()-container.clientWidth/2, e.clientY - (this.y-this.radius)*this.coeff_size()-container.clientHeight/2,Date.now()-this.startTime);
                     let type_request = 'dash';
                     if (this.is_clicked){
-                        this.send(JSON.stringify({token,type_request,dvx:dv[0],dvy:dv[1],used_delta_v:dv[2]}));
+                        this.send(JSON.stringify({token:this.token_client(),type_request,dvx:dv[0],dvy:dv[1],used_delta_v:dv[2]}));
                     } 
                     this.is_clicked = false;
                 }
