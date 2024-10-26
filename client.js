@@ -1,5 +1,5 @@
 console.log("burfbiejnief");
-import {vect_unitaire,distance,generateToken,getToken,send} from "./modules/fonctions.js";
+import {vect_unitaire,distance,generateToken,getToken} from "./modules/fonctions.js";
 import {Player} from "./modules/Player.js";
 import {Color} from "./modules/Color.js";
 import {Arena} from "./modules/Arena.js";
@@ -274,7 +274,7 @@ function createSocket() {
 
 
 //envoie des données au serveur
-export function send(data){
+function send(data){
     if (socket_open){
         socket.send(data);
     }
