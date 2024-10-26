@@ -28,15 +28,6 @@ export function getToken(){
     return token;
 }
 
-//envoie des données au serveur
-export function send(data){
-    if (socket_open){
-        socket.send(data);
-    }
-    else {
-        createSocket();
-    }
-}
 
 
 
