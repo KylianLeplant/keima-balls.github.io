@@ -1,7 +1,8 @@
+console.log("burfbiejnief");
 import {return_color,vect_unitaire,distance,generateToken,getToken,send} from "./modules/fonctions.js";
-import Player from "./Player.js";
+import {Player} from "./Player.js";
 import {Color,blue,red,color_arena} from "./modules/Color.js";
-import Arena from "./modules/Arena.js";
+import {Arena} from "./modules/Arena.js";
 //fç_hji
 
 ////////////////////////////////////////////////////////////////////////
