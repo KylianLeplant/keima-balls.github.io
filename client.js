@@ -2,7 +2,7 @@ import {return_color,vect_unitaire,distance,generateToken,getToken,send} from "/
 import Player from "Player.js";
 import {Color,blue,red,color_arena} from "/modules/Color.js";
 import Arena from "/modules/Arena.js";
-
+//
 
 ////////////////////////////////////////////////////////////////////////
 //CONSTANTES
