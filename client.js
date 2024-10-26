@@ -283,7 +283,14 @@ function send(data){
     }
 }
 
-
+function return_color(color){
+    if (color == "red"){
+        return red;
+    }
+    if (color == "blue"){
+        return blue;
+    }
+}
 
 ////////////////////////////////////////////////////////////////////////
 //PROGRAMME PRINCIPAL
