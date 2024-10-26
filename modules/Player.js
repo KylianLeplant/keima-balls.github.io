@@ -1,7 +1,7 @@
 
 
 export class Player{
-    constructor(x=100,y=100,is_player=true,player_token,color,size,nb_life){
+    constructor(x=100,y=100,is_player=true,player_token,color,size,nb_life,coeff_size){
         // attributs de position, de vitesse et de taille 
         this.x = x;
         this.y = y;
@@ -11,6 +11,8 @@ export class Player{
         this.is_player = is_player;
         this.mass = 10;
         this.nb_life = nb_life;
+        
+        this.coeff_size = coeff_size;
 
         this.token = player_token;
         this.delta_v = 100;   //mana disponible
@@ -78,7 +80,7 @@ export class Player{
             if (is_player){container.addEventListener('mouseup', (e) => {
                 if (e.button === 0){
                     //console.log("clic :",e.clientX,e.clientY,"   coord screen :",(this.x-this.radius)*coeff_size+container.clientWidth/2,(this.x-this.radius)*coeff_size+container.clientWidth/2);
-                    let dv = this.dash(e.clientX - (this.x-this.radius)*coeff_size-container.clientWidth/2, e.clientY - (this.y-this.radius)*coeff_size-container.clientHeight/2,Date.now()-this.startTime);
+                    let dv = this.dash(e.clientX - (this.x-this.radius)*this.coeff_size()-container.clientWidth/2, e.clientY - (this.y-this.radius)*this.coeff_size()-container.clientHeight/2,Date.now()-this.startTime);
                     let type_request = 'dash';
                     if (this.is_clicked){
                         send(JSON.stringify({token,type_request,dvx:dv[0],dvy:dv[1],used_delta_v:dv[2]}));
