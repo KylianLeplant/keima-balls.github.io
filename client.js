@@ -128,7 +128,7 @@ function startMovement(){
 
 
 function createSocket() {
-    socket = new WebSocket('ws://172.25.170.102:8080');
+    socket = new WebSocket('wss://172.25.170.102:8080');
     let retries = 0;
     const maxRetries = 5;
     socket.onopen = function() {
